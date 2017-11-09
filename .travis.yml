@@ -11,7 +11,8 @@ matrix:
         - brew cask install powershell
     - os: linux
       dist: trusty
-      sudo: false
+      # VM-based builds turned out to be faster
+      sudo: required
       addons:
         apt:
           sources:
